@@ -12,7 +12,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
+if "sidebar_open" not in st.session_state:
+    st.session_state.sidebar_open = True
 # -------------------------------------------------------------
 # Estilos CSS Personalizados Premium (Elimina marcas de IA/Streamlit)
 # -------------------------------------------------------------
