@@ -3,9 +3,6 @@ import json
 import streamlit as st
 import graphviz
 
-# -------------------------------------------------------------
-# Configuración de página con estética moderna y limpia
-# -------------------------------------------------------------
 st.set_page_config(
     page_title="Sistema Experto: Revisión Preventiva de Motos",
     page_icon="🏍️",
@@ -14,9 +11,7 @@ st.set_page_config(
 )
 if "sidebar_open" not in st.session_state:
     st.session_state.sidebar_open = True
-# -------------------------------------------------------------
-# Estilos CSS Personalizados Premium (Elimina marcas de IA/Streamlit)
-# -------------------------------------------------------------
+
 st.markdown("""
 <style>
     /* Ocultar barra nativa de Streamlit (Deploy, Menú de 3 puntos, Footer) */
@@ -139,9 +134,9 @@ def recargar_archivo():
     st.session_state.error_arbol = error
     reiniciar_navegacion()
 
-# -------------------------------------------------------------
-# Barra Lateral (Panel de Control e Información Institucional)
-# -------------------------------------------------------------
+
+# Barra Lateral 
+
 with st.sidebar:
     st.markdown("### ⚙️ Panel de Control")
     
@@ -180,9 +175,9 @@ with st.sidebar:
     st.caption("📚 Materia: Estructuras de Datos No Lineales")
     st.caption("👨‍🏫 Profesor: Álvaro Pinto")
 
-# -------------------------------------------------------------
+
 # Cabecera Principal
-# -------------------------------------------------------------
+
 st.markdown('<div class="main-title">🏍️ Sistema Experto: Revisión Preventiva de Motos</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title">Implementación de Inteligencia Artificial Local con Ollama y Estructuras de Datos No Lineales</div>', unsafe_allow_html=True)
 
@@ -190,18 +185,16 @@ if st.session_state.error_arbol:
     st.error(st.session_state.error_arbol)
     st.stop()
 
-# -------------------------------------------------------------
-# Organizado por Pestañas (Sección Profesional)
-# -------------------------------------------------------------
+
 tab_explorador, tab_diagrama, tab_json = st.tabs([
     "Explorador Interactivo", 
     "Diagrama del Árbol", 
     "Estructura JSON"
 ])
 
-# =============================================================
+
 # PESTAÑA 1: EXPLORADOR INTERACTIVO
-# =============================================================
+
 with tab_explorador:
     historial = st.session_state.historial
     if not historial:
@@ -213,7 +206,7 @@ with tab_explorador:
     nivel_actual = len(historial)
     hijos = nodo_actual.get("hijos", [])
 
-    # Breadcrumb (Migas de pan)
+
     breadcrumb_html = '<div class="breadcrumb-box"><span>📍 <b>Ruta actual:</b></span> '
     for idx, tit in enumerate(camino_titulos):
         if idx > 0:
@@ -329,9 +322,9 @@ with tab_explorador:
         except Exception as e:
             st.error(f"⚠️ No se pudo conectar con Ollama. Asegúrate de ejecutar `ollama serve` en tu terminal.\n\n**Error técnico:** {e}")
 
-# =============================================================
+
 # PESTAÑA 2: DIAGRAMA VISUAL DEL ÁRBOl
-# =============================================================
+
 with tab_diagrama:
     st.subheader("📊 Diagrama Jerárquico de la Estructura de Datos")
     st.markdown("Representación visual del árbol JSON cargado en el sistema:")
@@ -363,9 +356,9 @@ with tab_diagrama:
         st.info("Para visualizar el diagrama gráfico en tiempo real, Graphviz se encarga del renderizado.")
         st.text(f"Detalle técnico: {e}")
 
-# =============================================================
+
 # PESTAÑA 3: ESTRUCTURA JSON
-# =============================================================
+
 with tab_json:
     st.subheader("📄 Código Fuente del Árbol (`EstructurasDeDatos.json`)")
     st.markdown("Estructura jerárquica en formato JSON que alimenta la inteligencia artificial:")
