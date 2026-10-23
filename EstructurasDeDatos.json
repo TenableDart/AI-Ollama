@@ -1,0 +1,288 @@
+{
+  "valor": "Revisión Preventiva de Moto para Viaje",
+  "hijos": [
+    {
+      "valor": "Aceite y lubricación",
+      "hijos": [
+        {
+          "valor": "Nivel de aceite del motor",
+          "hijos": [
+            { "valor": "Nivel correcto (entre MIN y MAX)" },
+            { "valor": "Nivel bajo" },
+            { "valor": "Nivel alto" },
+            { "valor": "Aceite sucio o negro" },
+            { "valor": "Fuga de aceite visible" }
+          ]
+        },
+        {
+          "valor": "Lubricación de cadena",
+          "hijos": [
+            { "valor": "Cadena limpia y lubricada" },
+            { "valor": "Cadena seca" },
+            { "valor": "Cadena oxidada" },
+            { "valor": "Cadena con exceso de grasa" }
+          ]
+        },
+        {
+          "valor": "Aceite de horquilla",
+          "hijos": [
+            { "valor": "Sin fugas" },
+            { "valor": "Fuga leve" },
+            { "valor": "Fuga abundante" },
+            { "valor": "Horquilla muy blanda" }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "Llantas y frenos",
+      "hijos": [
+        {
+          "valor": "Presión de llantas",
+          "hijos": [
+            { "valor": "Presión correcta (según manual)" },
+            { "valor": "Presión baja" },
+            { "valor": "Presión alta" },
+            { "valor": "No sabe la presión correcta" }
+          ]
+        },
+        {
+          "valor": "Estado de la llanta delantera",
+          "hijos": [
+            { "valor": "Dibujo en buen estado" },
+            { "valor": "Dibujo desgastado" },
+            { "valor": "Grietas o cuarteaduras" },
+            { "valor": "Llanta ponchada" },
+            { "valor": "Llanta con objeto incrustado" }
+          ]
+        },
+        {
+          "valor": "Estado de la llanta trasera",
+          "hijos": [
+            { "valor": "Dibujo en buen estado" },
+            { "valor": "Dibujo desgastado" },
+            { "valor": "Grietas o cuarteaduras" },
+            { "valor": "Llanta ponchada" },
+            { "valor": "Llanta con objeto incrustado" }
+          ]
+        },
+        {
+          "valor": "Frenos delanteros",
+          "hijos": [
+            { "valor": "Pastillas en buen estado" },
+            { "valor": "Pastillas desgastadas" },
+            { "valor": "Disco rayado" },
+            { "valor": "Líquido de frenos bajo" },
+            { "valor": "Fuga de líquido de frenos" },
+            { "valor": "Freno esponjoso" }
+          ]
+        },
+        {
+          "valor": "Frenos traseros",
+          "hijos": [
+            { "valor": "Pastillas o tambor en buen estado" },
+            { "valor": "Pastillas desgastadas" },
+            { "valor": "Tambor rayado" },
+            { "valor": "Líquido de frenos bajo" },
+            { "valor": "Fuga de líquido de frenos" },
+            { "valor": "Freno esponjoso" }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "Luces y sistema eléctrico",
+      "hijos": [
+        {
+          "valor": "Luces delanteras",
+          "hijos": [
+            { "valor": "Luz baja funciona" },
+            { "valor": "Luz alta funciona" },
+            { "valor": "Luz baja no funciona" },
+            { "valor": "Luz alta no funciona" },
+            { "valor": "Luz parpadea" }
+          ]
+        },
+        {
+          "valor": "Luces traseras",
+          "hijos": [
+            { "valor": "Luz de posición funciona" },
+            { "valor": "Luz de freno funciona" },
+            { "valor": "Luz de posición no funciona" },
+            { "valor": "Luz de freno no funciona" },
+            { "valor": "Luz parpadea" }
+          ]
+        },
+        {
+          "valor": "Direccionales",
+          "hijos": [
+            { "valor": "Ambos funcionan" },
+            { "valor": "Izquierdo no funciona" },
+            { "valor": "Derecho no funciona" },
+            { "valor": "Parpadean muy rápido" },
+            { "valor": "No parpadean" }
+          ]
+        },
+        {
+          "valor": "Batería",
+          "hijos": [
+            { "valor": "Voltaje correcto (12.4V - 12.8V)" },
+            { "valor": "Voltaje bajo (menos de 12V)" },
+            { "valor": "Terminales sulfatados" },
+            { "valor": "Batería no retiene carga" },
+            { "valor": "Batería hinchada" }
+          ]
+        },
+        {
+          "valor": "Sistema de carga",
+          "hijos": [
+            { "valor": "Carga correcta (13.5V - 14.5V)" },
+            { "valor": "No carga" },
+            { "valor": "Sobrevoltaje (más de 15V)" },
+            { "valor": "Ruido en el alternador" },
+            { "valor": "Luz de batería encendida" }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "Motor y transmisión",
+      "hijos": [
+        {
+          "valor": "Bujía",
+          "hijos": [
+            { "valor": "Bujía limpia y en buen estado" },
+            { "valor": "Bujía negra (mezcla rica)" },
+            { "valor": "Bujía blanca (mezcla pobre)" },
+            { "valor": "Bujía desgastada" },
+            { "valor": "Bujía con aceite" }
+          ]
+        },
+        {
+          "valor": "Filtro de aire",
+          "hijos": [
+            { "valor": "Filtro limpio" },
+            { "valor": "Filtro sucio" },
+            { "valor": "Filtro obstruido" },
+            { "valor": "Filtro roto" }
+          ]
+        },
+        {
+          "valor": "Cadena o correa de transmisión",
+          "hijos": [
+            { "valor": "Tensión correcta" },
+            { "valor": "Cadena floja" },
+            { "valor": "Cadena muy tensa" },
+            { "valor": "Correa desgastada" },
+            { "valor": "Cadena o correa rota" }
+          ]
+        },
+        {
+          "valor": "Embrague",
+          "hijos": [
+            { "valor": "Funciona suave y sin ruido" },
+            { "valor": "Embrague patina" },
+            { "valor": "Embrague duro" },
+            { "valor": "Ruido al accionar" },
+            { "valor": "No desengancha" }
+          ]
+        },
+        {
+          "valor": "Cambios de marcha",
+          "hijos": [
+            { "valor": "Cambios suaves y precisos" },
+            { "valor": "Cambios duros" },
+            { "valor": "Se sale la marcha" },
+            { "valor": "No engrana una marcha" },
+            { "valor": "Ruido al cambiar" }
+          ]
+        },
+        {
+          "valor": "Refrigeración del motor",
+          "hijos": [
+            { "valor": "Nivel de refrigerante correcto" },
+            { "valor": "Refrigerante bajo" },
+            { "valor": "Fuga de refrigerante" },
+            { "valor": "Ventilador no enciende" },
+            { "valor": "Motor se sobrecalienta" }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "Suspensión y dirección",
+      "hijos": [
+        {
+          "valor": "Suspensión delantera",
+          "hijos": [
+            { "valor": "Horquilla sin fugas" },
+            { "valor": "Fuga de aceite en horquilla" },
+            { "valor": "Suspensión muy blanda" },
+            { "valor": "Suspensión muy dura" },
+            { "valor": "Ruido al pasar baches" }
+          ]
+        },
+        {
+          "valor": "Suspensión trasera",
+          "hijos": [
+            { "valor": "Amortiguador en buen estado" },
+            { "valor": "Amortiguador con fuga" },
+            { "valor": "Rebote excesivo" },
+            { "valor": "Ruido al pasar baches" }
+          ]
+        },
+        {
+          "valor": "Dirección",
+          "hijos": [
+            { "valor": "Dirección suave y precisa" },
+            { "valor": "Dirección dura" },
+            { "valor": "Juego en el manubrio" },
+            { "valor": "Vibración en el manubrio" },
+            { "valor": "Ruido al girar" }
+          ]
+        },
+        {
+          "valor": "Rodamientos de rueda",
+          "hijos": [
+            { "valor": "Ruedas giran suave" },
+            { "valor": "Ruido al girar la rueda" },
+            { "valor": "Juego en la rueda" },
+            { "valor": "Vibración a alta velocidad" }
+          ]
+        }
+      ]
+    },
+    {
+      "valor": "Escape y emisiones",
+      "hijos": [
+        {
+          "valor": "Estado del escape",
+          "hijos": [
+            { "valor": "Escape en buen estado" },
+            { "valor": "Escape con fuga" },
+            { "valor": "Ruido excesivo" },
+            { "valor": "Óxido perforado" }
+          ]
+        },
+        {
+          "valor": "Humo del escape",
+          "hijos": [
+            { "valor": "Sin humo visible" },
+            { "valor": "Humo blanco" },
+            { "valor": "Humo azul" },
+            { "valor": "Humo negro" }
+          ]
+        },
+        {
+          "valor": "Olor del escape",
+          "hijos": [
+            { "valor": "Olor normal" },
+            { "valor": "Olor a gasolina" },
+            { "valor": "Olor a aceite quemado" },
+            { "valor": "Olor dulce (refrigerante)" }
+          ]
+        }
+      ]
+    }
+  ]
+}
